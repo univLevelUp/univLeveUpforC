@@ -1,6 +1,6 @@
 //126p 06번, 달의 중력은 약 17%이다. 자신의 몸무게를 입력받아, 달에서의 몸무게를 계산하는 프로그램으로 작성, 실수형으로 계산.
 #define _CRT_SECURT_NO_WRNNIG
-#include <stdio.h>
+#include <stdio.h> 
 
 int main(void)
 {
