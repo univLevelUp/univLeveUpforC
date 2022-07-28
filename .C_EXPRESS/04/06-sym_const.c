@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    const int MONTHS = 12;  
+    const int MONTHS = 12;  //기호상수
     int m_salary, y_salaryl;
 
     printf("Please enter your monthly salary.: ");
