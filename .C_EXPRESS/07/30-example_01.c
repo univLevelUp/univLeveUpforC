@@ -1,19 +1,14 @@
 #include <stdio.h>
-
 int main(void)
 {
-    int number, i, x;
-
-    printf("number?: ");
-    scanf("%d", &number);
-
-    for(i = 1; i <= number; i++)
+    int c;
+    printf("counter: ");
+    scanf("%d", &c);
+    
+    for(c; c>=1; c--)
     {
-        for(x = 1; x <= i; x++)
-        {
-            printf("%d ", x);
-        }
-     printf("\n");
+        printf("%d ", c);
     }
-    return 0;  
+
+    return 0;
 }
