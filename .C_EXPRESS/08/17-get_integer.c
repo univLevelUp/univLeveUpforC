@@ -7,8 +7,10 @@ char get_char();
 int main(void)
 {
     double f, g;
-    f = get_double;
-    g = get_double;
+    printf("f: ");
+    scanf("%lf", &f);
+    printf("g: ");
+    scanf("%lf", &g);
     printf("sum = %lf", f + g);
 }
 
