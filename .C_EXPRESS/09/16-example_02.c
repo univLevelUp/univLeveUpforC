@@ -13,7 +13,8 @@ int main(void)
 
 int get_dice_face()
 {
-    int n_1 = 0, n_2 = 0, n_3 = 0, n_4 = 0, n_5 = 0, n_6 = 0, num;
+    static int n_1 = 0, n_2 = 0, n_3 = 0, n_4 = 0, n_5 = 0, n_6 = 0;
+    int num;
     while(1){
         num = rand() % 6;
         if (n_1 + n_2 + n_3 + n_4 + n_5 + n_6 == 100)
