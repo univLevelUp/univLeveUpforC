@@ -1,34 +1,35 @@
 #include <stdio.h>
 #define PASS 1234
 
-int check();
+int check(password);
 
 int main(void)
 {
     int password;
-    while(1){
-            printf("password: ");
-            scanf("%d", &password);
-            check(password);
-            if (cheak() == 0)
-                break;
-    }   
+
+    for(int i = 0; i = 3; i++)
+    {
+        printf("password: ");
+        scanf("%d", &password);
+        check(password);
+    }
 }
 
-int check(int password)
-{
+int check(password){
     static int try = 0;
-    if (password == PASS){
-        printf("pass\n");
-        try ++;
-        return 0;
-    }
-    else if(password =! PASS)
-    {
-        return 1;
-        try++;
-    }
-    else if(try == 3)
-        printf("over\n");
-        return 0;
+
+        if (try == 2){
+            printf("over\n");
+        }
+        else if(password != PASS)
+        {
+            try++;
+            return 1;
+        }
+        else if(password == PASS)
+        {
+            printf("pass\n");
+            try ++;
+            return 0;
+        }
 }
