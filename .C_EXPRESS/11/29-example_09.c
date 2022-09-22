@@ -6,7 +6,8 @@ int main(void)
 {
     int wage[10] = {200, 100, 100, 200, 300, 200};
     int value = 200;
-    printf("%d is index %d\n", value, serch(wage, 10, value));
+    printf("%d is index %d\n0 " 
+    , value, serch(wage, 10, value));
     return 0;
 }
 
