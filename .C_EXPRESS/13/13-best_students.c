@@ -27,6 +27,4 @@ int main(void)
             super_stu = list[i];
     }
     printf("best sudent = (name: %s, number: %d, grade: %f\n", super_stu.name, super_stu.number, super_stu.grade);
-    
-    return 0;
 }
