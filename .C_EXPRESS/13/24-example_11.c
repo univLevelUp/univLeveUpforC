@@ -25,8 +25,10 @@ int main(void)
     for (int i = 0; i < 3; i++)
     {
         if(strcmp (name, d[i].name) == 0)
+        {
             printf("home number: %s\n", d[i].homenumber);
             printf("phone number: %s\n", d[i].phonenumber);
+        }
     }
     return 0;
 }
