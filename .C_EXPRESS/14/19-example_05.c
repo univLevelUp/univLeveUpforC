@@ -1,19 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char *argv[])
+void set_max_ptr(int m[], int size, int **pmax);
+
+int main(void)
 {
-    double mile, km;
+    int m[6] = {5, 6, 1, 3, 7, 9};
+    int *pmax;
+	set_max_ptr(m, 6, &pmax);
+	printf("The largest value is %d\n", *pmax);
+	
+    return 0;
+}
 
-    if(argc != 2)
+void set_max_ptr(int m[], int size, int **pmax)
+{
+	int i;
+	int max;
+	max = m[0];
+
+	for (i = 1;i < 6;i++)
     {
-        printf("How to use: mile 2km distance\n");
-        return 1;
-    }
-    
-    mile = atof(argv[1]);
-    km = 1.609 * mile;
-    printf("The distance entered is %f km.", km);
+		if( m[i] > max ) 
+        {
+			max = m[i];
 
-    return 0;   
+			(*pmax) = &m[i];
+		}
+	}
 }

@@ -16,7 +16,7 @@ int main(void)
         "Power is dangerous unless you have humility.",
         "Office changes manners.",
         "Empty vessels make the most sound."
-	};
+	}; 
 	
     pr_str_array(array, 10);
 
