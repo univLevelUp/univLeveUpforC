@@ -11,4 +11,5 @@ double power(double x, int n)
 int main(void)
 {
     printf("%lf", power(2, 10));
+    return 0;
 }

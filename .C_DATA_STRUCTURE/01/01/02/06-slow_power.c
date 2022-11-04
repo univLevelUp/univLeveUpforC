@@ -13,4 +13,5 @@ double slow_power(double x, int n)
 int main(void)
 {
     printf("%lf", slow_power(2, 10));
+    return 0;
 }

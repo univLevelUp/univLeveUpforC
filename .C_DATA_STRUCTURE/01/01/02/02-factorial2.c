@@ -10,4 +10,5 @@ int factorial(int n)
 int main(void)
 {
     factorial(3);
+    return 0;
 }

@@ -11,4 +11,5 @@ int factorial_iter(int n)
 int main(void)
 {
     printf("%d ", factorial_iter(4));
+    return 0;
 }

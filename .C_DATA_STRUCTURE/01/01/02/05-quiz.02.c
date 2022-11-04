@@ -14,4 +14,5 @@ int sub(int n)
 int main(void)
 {
     printf("%d", sub(10));
+    return 0;
 }

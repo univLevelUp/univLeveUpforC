@@ -14,5 +14,5 @@ int get_max_score(int n)
         }
     }
     
-    return largest
+    return largest;
 }
