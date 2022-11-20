@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_LIST_SIZE 100
-00
+
 typedef int element;
 typedef struct
 {
