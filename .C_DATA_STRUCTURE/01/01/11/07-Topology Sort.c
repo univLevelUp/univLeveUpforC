@@ -64,7 +64,7 @@ int is_empty(StackType *s)
 
 int is_full(StackType *s)
 {
-    return (s->top == (MAX_STACK_SIZE - 1))
+    return (s->top == (MAX_STACK_SIZE - 1));
 }
 
 void push(StackType *s, element item)
@@ -104,7 +104,7 @@ int topt_sort(GraphType *g)
     
     init(&s);
     for(i = 0; i < g->n; i++){
-        if(in_degree[i] == 0)push(&s, i));
+        if(in_degree[i] == 0) push(&s, i);
     }
 
     while(!is_empty(&s)){
