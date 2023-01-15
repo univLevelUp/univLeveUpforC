@@ -1,4 +1,4 @@
-Tree23Nide *tree23_search(Tree23Node* root, int key)
+Tree23Node *tree23_search(Tree23Node* root, int key)
 {
     if(root == NULL)
         return FALSE;

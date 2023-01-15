@@ -1,7 +1,7 @@
 #define empty(item) (strlen(item.key)==0)
-#define equal(item1, item2) (!strcmp(item1.key, ktem2.key))
+#define equal(item1, item2) (!strcmp(item1.key, item2.key))
 
-void hash_lp_add(element item, elementht[])
+void hash_lp_add(element item, element ht[])
 {
     int i, hash_value;
     hash_value = i = hash_function(item.key);

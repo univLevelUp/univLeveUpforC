@@ -1,6 +1,6 @@
 void hash_qp_add(element item, element ht[])
 {
-    int i; hash_value, int c = 0;
+    int i, hash_value; int c = 0;
     hash_value = i = hash_function(item.key);
 
     while(!empty(ht[i])){

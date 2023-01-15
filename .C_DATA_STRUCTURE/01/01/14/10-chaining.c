@@ -2,7 +2,7 @@ void hash_chain_print(struct list *ht[])
 {
     struct list *node;
     printf("\n================================");
-    for(i = 0; i < TABLS_SIZEL;i++){
+    for(int i = 0; i < TABLS_SIZEL;i++){
         printf("[%d]->", i);
         for(node = ht[i]; node; node = node->link){
             printf("%d->", node->item.key);

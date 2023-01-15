@@ -8,13 +8,13 @@ void hash_chain_add(element item, struct list *ht[])
     int hash_value = hash_function(item.key);
     struct list *ptr;
     struct list *node_before = NULL, *node = ht[hash_value];
-    for(; node; node_before = node; node = node->link){
+    for(; node; node_before = node, node = node->link){
         if(node->item.key == item.key){
             fprintf(stderr, "Navigation keys already saved\n");
             return;
         }
     }
-    ptr = (struct list *)malloc(sizeof(sturct list))
+    ptr = (struct list *)malloc(sizeof(struct list))
     ptr->item = item;
     ptr->link = NULL;
     if(node_before)
