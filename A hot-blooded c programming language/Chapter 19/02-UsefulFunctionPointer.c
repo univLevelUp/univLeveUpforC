@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int WhoIsFirst(int age1, int age2, int (*cmp)(int n1, int n2));
+int WhoIsFirst(int age1, int age2, int (*cmp)(int n1, int n2))
 {
     return cmp(age1, age2);
 }
